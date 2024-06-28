@@ -3,7 +3,7 @@ on: push
 jobs:
   qa: 
     name: check_tests
-    runs-on: ubuntu-20-04
+    runs-on: ubuntu-20.04
     steps: 
       - name: checkout_on_master
         uses: actions/checkout@v3
