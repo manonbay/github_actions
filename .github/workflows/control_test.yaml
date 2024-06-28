@@ -13,15 +13,15 @@ steps:
     with:
       python-version: "3.x"
 
-- name: install_pytest_and_flake8
-  run: |
-    pip install pytest
-    pip install flake8
+  - name: install_pytest_and_flake8
+    run: |
+      pip install pytest
+      pip install flake8
 
-- name: Run tests
-  run: |
-    pytest
+  - name: run_tests
+    run: |
+      pytest
 
-- name: Run flake8
-  uses: py-actions/flake8@v2
+  - name: run_flake8
+    uses: py-actions/flake8@v2
 
